@@ -1,0 +1,1066 @@
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 560px) {
+	/**** Styles ****/
+
+	/** typography **/
+	.item .carousel-caption h1:first-of-type, .best-logo h1, .section-title h1, .about-chefs .col-md-3 h1, .story h1, 
+	.events-panel .panel-title, .countdown h1, .event-description h1{letter-spacing: 2px}
+	.item .carousel-caption h1:last-of-type, .section-intro h1, .best-logo span b, .month h2{letter-spacing: 4px}
+
+	.item .carousel-caption li, .menu-download a, .featured-food li h3, .about-chefs .col-md-3 p:first-of-type, .chef span, 
+	.panel-heading p:last-child, .section-intro button, .reservation-intro h2, .reservation-intro a, .form-name span, .form-name h2, 
+	.reservation-form label, .reservation-form input, .reservation-form button, .work-time h2, .contact-dates h2, .post-author, 
+	.published-date, .sidebar-menu-title, .post-tags {letter-spacing: 3px}
+	
+	.logo, .menu li span, .description p, .about-chefs .col-md-3 span, .story p, .countdown p, 
+	.event-description p, .reservation-form input, .datepicker th, .work-time p, .contact-dates, footer{font-size: 16px}
+	.work-time h2, .page-404-content .section-intro h1{font-size: 24px}
+	.item .carousel-caption h1, .section-intro h1, .best-logo p, .best-logo h1, .section-title h1, 
+	.about-chefs .col-md-3 h1, .story h1, .events-panel .panel-title, .countdown h1, .event-description h1{font-size: 30px}
+
+	/* main menu button normal state*/
+	.navbar-toggle{
+		border: none;
+		margin-top: 35px;
+		margin-right: 0;
+		padding: 10px 0;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background-color: transparent; }
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+		border-radius: 0;
+		position: relative;
+		width: 30px;
+	}
+	/*opened menu*/
+	.navbar-collapse{display: none;}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3){visibility: visible;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(3){visibility: hidden;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2){
+		top: 7px;
+		-webkit-transform: rotate(50deg);
+		-ms-transform: rotate(50deg);
+		-o-transform: rotate(50deg);
+		transform: rotate(50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2){
+		top: -2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		top: -5px;
+		-webkit-transform: rotate(-50deg);
+		-ms-transform: rotate(-50deg);
+		-o-transform: rotate(-50deg);
+		transform: rotate(-50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:last-child{
+		top: 2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2),
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	/* main menu button (fixed navbar) normal state*/
+	.navbar-fixed .navbar-toggle{
+		border-color: #333;
+		margin-top: 11px;
+	}
+	.navbar-fixed .navbar-toggle .icon-bar{ background-color: #333; }
+
+	/* main menu */
+	.navbar{
+		padding: 0 20px;
+		z-index: 9;
+	}
+	.navbar-nav{margin-top: 0}
+	.navbar-collapse.pull-right{float: none !important;} /* removing float right*/
+	.navbar-collapse{
+		position: absolute;
+		left: 0;
+		width: 105%;
+		padding-left: 30px;
+		background: #fff;
+		height: 100vh;
+		max-height: 90vh !important;
+		display: none;
+		overflow: scroll;
+	}
+	.navbar-collapse a{
+		font-size: 12px;
+		color: #333 !important;
+		line-height: 2.6 !important;
+		padding: 10px 0 !important;
+	}
+	.navbar-fixed .navbar-nav{
+		margin-top: 0;
+		position: absolute;
+		background: #fff;
+		width: 100%;
+		height: 100%;
+		border-top: 2px solid #333;
+	}
+	.navbar-fixed:after{
+		z-index: 4;
+		display: none;
+	}
+
+	/* top carousel */
+	header:after{z-index: -3;}
+	.carousel{z-index: -2;}
+	.item .carousel-caption{
+		top: 50%;
+		margin-top: -160px;
+	}
+	.item .carousel-caption ul:before{
+		top: -30px;
+		left: 0;
+		width: 100%;
+		height: 122px;
+	}
+	.item h1:first-of-type:before{
+		left: 0;
+		top: 18px;
+	}
+	.item h1:first-of-type:after{
+		right: 0;
+		top: 18px;
+	}
+	#top-carousel .carousel-indicators{
+		top: auto;
+		bottom: 15%;
+	}
+	.item{background-attachment: inherit !important}
+	.item:before{z-index: -2;}
+
+	/* section intro */
+	.section-intro{margin-top: 30px}
+	.section-intro:before{
+		left: 50%;
+		height: 128%;
+		top: -60px;
+		margin-left: -15px;
+	}
+	.section-intro ul:before{
+		top: -31px;
+		left: 0px;
+		width: 100%;
+	}
+	.section-intro li{
+		letter-spacing: 3px;
+		padding: 0;
+		margin: 0 15px;
+	}
+	.section-intro.long-border ul:before{ height: 105px; }
+	.section-intro.long-border h1:first-of-type:before, .section-intro.long-border h1:first-of-type:after{width: 60px}
+	.section-intro h1:first-of-type:after{
+		top: 15px;
+		right: 0px;
+		width: 30px;
+	}
+	.section-intro h1:first-of-type:before{
+		top: 15px;
+		left: 0px;
+		width: 30px;
+	}
+	.section-title span{margin: auto}
+	.section-title b{
+		word-wrap: break-word;
+		margin-top: 30px;
+	}
+	.section-intro button{
+		padding-bottom: 3px;
+		margin-bottom: 1px;
+		letter-spacing: 1px;
+	}
+
+	/* Our menu */
+	.principal-menu .menu-name{background-size: cover; z-index: 2;}
+	.deserts .menu-name{background-size: cover;}
+	.drinks-menu .menu-name{background-size: cover;}
+	.menu ul i.product-contain{
+		display: inline-block;
+		width: 70%;
+		height: 18px;
+		-ms-text-overflow: ellipsis;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	.menu-name h2{
+		letter-spacing: 1px;
+		bottom: 0;
+	}
+	.best-logo h1:after{bottom: 6px}
+	.best-logo{
+		position: absolute !important;
+		right: -15px;
+		top: 0;
+		height: auto;
+		padding: 25px 0;
+		text-align: center;
+	}
+	.best-logo p{margin: 0}
+	.best-logo p span{top: 9px;}
+
+	.featured-food-carousel .owl-dots{
+		top: 410px;
+		left: 15px;
+		right: 15px;
+		width: auto;
+	}
+	.featured-food .description:before{left: 20px;}
+	.featured-food li{
+		margin-bottom: 50px;
+		width: 80%;
+	}
+	
+	.white_bg:after {
+		left: 0;
+		top: -4px;
+	}
+	.about-chefs{background-attachment: inherit;}
+	.section-title{text-align: center;}
+	.section-title b:before{
+		top: 2px;
+		right: 10%;
+		height: 25px;
+	}
+	.section-title h1:before, .section-title h1:after {
+		bottom: 6px;
+		background: #fff;
+	}
+	
+	.about-chefs:after, .about-chefs:before{display: none;}
+	.about-chefs .col-md-3{ background: url("../images/left_chefs_bg.jpg") no-repeat;}
+	.about-chefs .col-md-3:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.about-chefs .col-md-3 button{
+		position: relative;
+		width: 100%;
+		z-index: 4;
+	}
+	.chef{margin: 40px 10px}
+	.story-block .owl-dots{
+		top: 35%;
+		width: 200px;
+		margin-left: -100px;
+		left: 50%;
+	}
+	.story-block img{
+		width: 100%;
+		height: auto;
+	}
+	.story h1{margin-top: 35px}
+	
+	.gallery-left-bg,
+	.gallery-right-bg{display: none;}
+
+	.chef.active:after{
+		-webkit-transform: scaleX(9);
+		-ms-transform: scaleX(9);
+		-o-transform: scaleX(9);
+		transform: scaleX(9);
+	}
+
+	.story .col-md-offset-1.col-md-3{padding-top: 0}
+	
+	/** upcoming events section **/
+	.events-panel{margin-top: 25px;}
+	.countdown:after{height: 170px;}
+	.countdown ul{
+		left: 9%;
+		bottom: 95px;
+	}
+	.countdown li{margin: 0 8px;}
+	.countdown p, .event-description h2{font-size: 16px}
+	.countdown li:first-child:after, .countdown li:nth-child(2):after, 
+	.countdown li:nth-child(3):after{
+		top: 40%;
+		right: -20px;
+		width: 20px;
+	}
+	.countdown span{font-size: 24px}
+	.countdown .icon{left: 10px}
+	.countdown button{right: 20px}
+	.events-panel .panel-title{
+		left: 5px;
+		width: 90px;
+		padding: 20px 0 20px 15px;
+	}
+	.event-description a{margin-bottom: 20px}
+	.events-panel a[role=button]{
+		left: 30%;
+		width: 75px;
+	}
+	.events-panel .panel-heading p:last-child{
+		top: 0;
+		margin-right: 0;
+	}
+	
+	/** Gallery **/
+	#gallery{padding: 90px 0 40px 0}
+	.gallery-content{
+		padding: 0;
+		margin-top: 22px;
+	}
+	.gallery-content li{margin: 30px 10px}
+	
+	/** Reservation form **/
+	#reservation .section-title h1:before, #reservation .section-title h1:after{background: #f9f9f6}
+	.reservation-form .form-group{margin-bottom: 30px}
+	.reservation-intro h2{margin: 0}
+	.reservation-intro h2:after{
+		right: auto;
+		left: 0;
+	}
+	.reservation-form button{
+		width: 90%;
+		margin-top: 30px;
+	}
+	.form-name span b{padding: 0 20px}
+	.form-name b{padding: 0}
+	.form-name h2:before{display: none;}
+	.form-name h2 b{display: block;}
+	.form-name h2 b:before,
+	.form-name h2 b:after{
+		width: 100%;
+		left: 0;
+		right: 0;
+	}
+
+	/** contact section **/
+	#contact{padding: 40px 0 20px}
+	#contact .section-title h1:before{background: #f9f9f6}
+	#contact .section-title h1:after{
+		content: "";
+		position: absolute;
+		bottom: 39px;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background: #f9f9f6;
+		display: block;
+	}
+	.work-time{padding: 20px 25px}
+	.work-time li:nth-child(2):before{left: -25px}
+	.social-links li{margin-right: 10px;}
+
+	/** footer **/
+	footer .logo{top: -85px}
+
+	/** Blog Page **/
+	.blog-page-header .section-intro ul:before,
+	.blog-post-header .section-intro ul:before{
+		width: 70%;
+	    left: 15%;
+	    height: 100px;
+	}
+	.blog-page-header .section-intro h1:first-of-type:before,
+	.blog-post-header .section-intro h1:first-of-type:before{left: 15%}
+	.blog-page-header .section-intro h1:first-of-type:after,
+	.blog-post-header .section-intro h1:first-of-type:after{right: 15%}
+	
+	.post, .blog-page-content nav{margin-bottom: 30px}
+	.standard-post .published-date{padding: 0 0 30px 30px}
+	.quote-post .content-post:before{height: 80%}
+	.gallery-post .post-title,
+	.video-post .post-title{margin-bottom: 60px}
+	.gallery-images a{margin-bottom: 30px}
+
+	.web-post h1{
+		font-size: 16px;
+		padding: 15px 15px 15px 45px;
+		word-break: break-all;
+	}
+	.web-post h1 a{letter-spacing: 0;}
+	.sidebar{padding: 0}
+	.tags-menu a{margin: 0 5px 10px 0}
+	.instagram-menu{text-align: center}
+	.instagram-menu a.middle{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.instagram-menu a{display: block;}
+
+	.search-post{margin-bottom: 90px}
+
+	/** Blog Post **/
+	.blog-post-title h1{line-height: 130%}
+	.blog-post-header .section-intro p:before{
+		width: 57%;
+		left: 22%;
+	}
+	.blog-post-header .section-intro span:after{
+		right: 21%;
+		width: 50px;
+	}
+	.blog-post-header .section-intro p:after{
+		left: 22%;
+		width: 50px;
+	}
+	.blog-post-header .section-intro span:before{margin-left: 10px}
+	.blog-post-content .post-intro{padding: 20px}
+	.blog-post-content .quote-post .content-post:before{height: 87%;}
+	.blog-post-content .quote-post, .blog-post-content .quote-post .post-author{font-size: 10px}
+
+	.author-avatar{
+		margin-bottom: 30px;
+		padding: 0;
+	}
+	.author-avatar:before{right: 0}
+
+	.comment-time{margin-bottom: 30px}
+	.comment .col-md-9{padding: 0}
+	.comment-author, .comment-author-mail{width: 98.5%}
+	.posts-controls a{
+		width: 140px;
+		padding: 10px 0;
+		font-size: 10px;
+	}
+
+	/*** 404 PAGE ***/
+	.page-404{background-position: 50%}
+	.page-404-content .section-intro h1, .page-404-content .section-intro li {letter-spacing: 1px;}
+	.page-404-content .section-intro ul:before{
+		width: 100%;
+		top: -30px;
+		height: 80px;
+	}
+	.page-404-content .section-intro h1:first-of-type:before, 
+	.page-404-content .section-intro h1:first-of-type:after{
+		width: 8%;
+	}
+
+
+}
+
+@media only screen and (min-width : 561px) and (max-width : 767px){
+	/** typography **/
+	.item .carousel-caption h1:first-of-type, .best-logo h1, .section-title h1, .about-chefs .col-md-3 h1, .story h1, 
+	.events-panel .panel-title, .countdown h1, .event-description h1{letter-spacing: 2px}
+	.item .carousel-caption h1:last-of-type, .section-intro h1, .best-logo span b, .month h2{letter-spacing: 4px}
+	
+	.logo, .menu li span, .description p, .about-chefs .col-md-3 span, .story p, .countdown p, 
+	.event-description p, .reservation-form input, .datepicker th, .work-time p, .contact-dates, footer{font-size: 16px}
+	.item .carousel-caption h1, .section-intro h1, .best-logo p, .best-logo h1, .section-title h1, 
+	.about-chefs .col-md-3 h1, .story h1, .events-panel .panel-title, .countdown h1, .event-description h1{font-size: 38px}
+
+	/* main menu button normal state*/
+	.navbar-toggle{
+		border: none;
+		margin-top: 35px;
+		margin-right: 0;
+		padding: 10px 0;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background-color: transparent; }
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+		border-radius: 0;
+		position: relative;
+		width: 30px;
+	}
+	/*opened menu*/
+	.navbar-collapse{display: none;}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3){visibility: visible;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(3){visibility: hidden;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2){
+		top: 7px;
+		-webkit-transform: rotate(50deg);
+		-ms-transform: rotate(50deg);
+		-o-transform: rotate(50deg);
+		transform: rotate(50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2){
+		top: -2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		top: -5px;
+		-webkit-transform: rotate(-50deg);
+		-ms-transform: rotate(-50deg);
+		-o-transform: rotate(-50deg);
+		transform: rotate(-50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:last-child{
+		top: 2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2),
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+
+	/* main menu button (fixed navbar) normal state*/
+	.navbar-fixed .navbar-toggle{
+		border-color: #333;
+		margin-top: 10px;
+	}
+	.navbar-fixed .navbar-toggle .icon-bar{ background-color: #333; }
+
+	/* main menu */
+	.navbar{padding: 0 20px}
+	.navbar-nav{
+		margin-top: 0;
+		height: 530px;
+	}
+	.navbar-collapse.pull-right{float: none !important;} /* removing float right*/
+	.navbar-collapse{
+		background: #fff;
+	}
+	.navbar-collapse a{
+		color: #333 !important;
+		line-height: 2.6 !important;
+	}
+
+	/* top carousel */
+	.item .carousel-caption ul:before{
+		top: -30px;
+		left: 0;
+		width: 100%;
+		height: 127px;
+	}
+	.item h1:first-of-type:before{left: 0}
+	.item h1:first-of-type:after{right: 0}
+	.item .carousel-caption{top: 10%}
+	.item{background-attachment: inherit !important}
+	#top-carousel .carousel-indicators{display: none;}
+
+
+	/* Our menu */
+	.section-intro:before{
+		left: 50%;
+		margin-left: -15px;
+	}
+	.section-intro ul:before{
+		top: -34px;
+		left: 15%;
+		width: 70%;
+		height: 90px;
+	}
+	.section-intro li{letter-spacing: 0}
+	.section-intro.long-border ul:before{ height: 103px; }
+	.section-intro.long-border h1:first-of-type:before, .section-intro.long-border h1:first-of-type:after{width: 60px}
+	.section-intro h1:first-of-type:after{
+		top: 21px;
+		right: 15%;
+		width: 30px;
+	}
+	.section-intro h1:first-of-type:before{
+		top: 20px;
+		left: 15%;
+		width: 30px;
+	}
+	.section-title span{margin: auto}
+	.section-title b{
+		word-wrap: break-word;
+		margin-top: 30px;
+	}
+	
+	.principal-menu .menu-name{
+		background-size: cover;
+		z-index: 2;
+	}
+	.deserts .menu-name{background-size: cover;}
+	.drinks-menu .menu-name{background-size: cover;}
+	.menu-name h2{letter-spacing: 0}
+	.best-logo h1:after{bottom: 6px}
+	.best-logo{
+		position: absolute !important;
+		right: 0;
+		top: 0;
+		height: auto;
+		width: 100px;
+		padding: 20px 0;
+		text-align: center;
+	}
+	.featured-food:before{height: 60%}
+	.featured-food-carousel .owl-dots{
+		top: 50%;
+		width: 35%;
+	}
+	.featured-food .description:before{left: 20px;}
+	.featured-food li{margin-bottom: 50px}
+
+	.white_bg:after {
+		left: 0;
+		width: 100%;
+	}
+	.about-chefs{background-attachment: inherit;}
+	.section-title{text-align: center;}
+	.section-title b:before{
+		right: auto;
+		height: 25px;
+	}
+	.section-title h1:before, .section-title h1:after {bottom: 7px}
+	
+	#about .section-title h1:before, .section-title h1:after{background: #fff}
+	.about-chefs:after, .about-chefs:before{display: none;}
+	.about-chefs .col-md-3{ 
+		background: url("../images/left_chefs_bg.jpg") no-repeat;
+		background-size: cover;
+	}
+	.about-chefs .col-md-3:before{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.about-chefs .col-md-3 button{
+		position: relative;
+		z-index: 4;
+	}
+	.chef{
+		width: 60%;
+		margin: 30px auto;
+	}
+	.story-block .owl-dots{
+		top: 500px;
+		width: 50%;
+	}
+	.story .col-md-offset-1.col-md-3{padding-top: 0}
+	.story-block img{width: inherit}
+	
+	.gallery-left-bg,
+	.gallery-right-bg{display: none;}
+	
+	.countdown:after{height: 170px;}
+	.countdown ul{
+		left: 15px;
+		bottom: 95px;
+	}
+	.countdown li{margin: 0 8px;}
+	.countdown p, .event-description h2{font-size: 16px}
+	.countdown li:first-child:after, .countdown li:nth-child(2):after, 
+	.countdown li:nth-child(3):after{
+		top: 40%;
+		right: -20px;
+		width: 20px;
+	}
+	.countdown .icon{left: 10px}
+	.events-panel .panel-title{
+		left: 5px;
+		width: 90px;
+		padding: 20px 0 20px 15px;
+	}
+	.event-description a{margin-bottom: 20px}
+	.event-description .col-md-offset-2.col-md-3{
+		position: absolute;
+		top: 30px;
+		right: 15px;
+	}
+	.events-panel a[role=button]{
+		left: auto;
+		right: 20%;
+		width: 75px;
+	}
+	.events-panel .panel-info{margin-left: 15%}
+	.events-panel .panel-heading p:last-child{margin-right: 0;}
+	.panel-heading h5{
+		display: block !important;
+		margin: 10px 0;
+	}
+
+	.gallery-content{padding: 30px 0}
+	.gallery-content li{margin: 30px 10px}
+
+	.reservation-intro h2:after{
+		right: auto;
+		left: 0;
+	}
+	.reservation-form button{letter-spacing: 3px}
+	.form-name span:after, .form-name span:before{width: 100px;}
+	.form-name span:after{left: 98px}
+	.form-name span:before{right: 98px}
+	.form-name h2:before, .form-name h2:after, 
+	.reservation-form button:after, .reservation-form button:before{display: none;}
+
+	.work-time{
+		width: 65%;
+		margin: 30px auto;
+	}
+
+	.social-links li{margin-right: 10px;}
+
+	footer .logo{top: -85px}
+
+	/** Blog Post Page **/
+	
+	.post{margin-bottom: 30px}
+	.standard-post .published-date{padding: 0 0 30px 30px}
+	.quote-post .content-post:before{height: 78%}
+	.gallery-post .post-title,
+	.video-post .post-title{margin-bottom: 90px}
+	.gallery-images a{margin-bottom: 30px}
+	.blog-page-content nav{margin-bottom: 30px}
+
+	.web-post h1{
+		font-size: 24px;
+		padding: 15px 15px 15px 45px;
+		word-break: break-all;
+	}
+	.sidebar{padding: 0 30px}
+	.instagram-menu{text-align: center}
+	.instagram-menu a.middle{
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.instagram-menu a{display: block;}
+
+	.search-post{margin-bottom: 90px}
+
+	/*** 404 PAGE ***/
+	.page-404{background-position: 50%}
+	.page-404-content .section-intro ul:before{
+		width: 100%;
+		left: 0;
+		top: -40px;
+		height: 97px;
+	}
+	.page-404-content .section-intro h1:first-of-type:before, 
+	.page-404-content .section-intro h1:first-of-type:after{ width: 10%;}
+	.page-404-content .section-intro h1:first-of-type:before{left: 0;}
+	.page-404-content .section-intro h1:first-of-type:after{ right: 0%;}
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1023px){
+	/** typography **/
+	.item .carousel-caption h1:first-of-type, .best-logo h1, .section-title h1, .about-chefs .col-md-3 h1, .story h1, 
+	.events-panel .panel-title, .countdown h1, .event-description h1{letter-spacing: 2px}
+	.item .carousel-caption h1:last-of-type, .section-intro h1, .best-logo span b, .month h2{letter-spacing: 4px}
+	
+	.logo, .menu li span, .description p, .about-chefs .col-md-3 span, .story p, .countdown p, 
+	.event-description p, .reservation-form input, .datepicker th, .work-time p, .contact-dates, footer{font-size: 16px}
+	.item .carousel-caption h1, .section-intro h1, .best-logo p, .best-logo h1, .section-title h1, 
+	.about-chefs .col-md-3 h1, .story h1, .events-panel .panel-title, .countdown h1, .event-description h1{font-size: 38px}
+
+	/* main menu button normal state*/
+	.navbar-toggle{
+		position: absolute;
+		right: 15px;
+		display: block;
+		border: none;
+		margin-top: 35px;
+		z-index: 2;
+		padding: 10px 0;
+	}
+	.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{ background-color: transparent; }
+	.navbar-default .navbar-toggle .icon-bar{
+		background-color: #fff;
+		border-radius: 0;
+		position: relative;
+		width: 30px;
+	}
+	.navbar-fixed .navbar-toggle{
+		top: -22px;
+	}
+	.navbar-fixed .navbar-toggle.collapsed .icon-bar{background-color: #333}
+	.navbar-fixed .navbar-toggle .icon-bar{background-color: #fff}
+	/*opened menu*/
+	.navbar-collapse{display: none;}
+	.navbar-default{padding: 0 30px}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(3){visibility: visible;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(3){visibility: hidden;}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2){
+		top: 7px;
+		-webkit-transform: rotate(50deg);
+		-ms-transform: rotate(50deg);
+		-o-transform: rotate(50deg);
+		transform: rotate(50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:nth-child(2){
+		top: -2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		top: -5px;
+		-webkit-transform: rotate(-50deg);
+		-ms-transform: rotate(-50deg);
+		-o-transform: rotate(-50deg);
+		transform: rotate(-50deg);
+	}
+	.navbar-default .navbar-toggle.collapsed .icon-bar:last-child{
+		top: 2px;
+		-webkit-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+	}
+	.navbar-default .navbar-toggle .icon-bar:nth-child(2),
+	.navbar-default .navbar-toggle .icon-bar:last-child{
+		-webkit-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.navbar-collapse.collapse{
+		position: fixed;
+		height: 100% !important;
+	}
+	.navbar-collapse{
+		width: 300px;
+		margin-top: -30px;
+		margin-right: -320px !important;
+		background: #333;
+		max-height: 100% !important;
+		-webkit-transition: margin-right 0.3s ease-in-out, right 0.3s ease-in-out;
+		-o-transition: margin-right 0.3s ease-in-out, right 0.3s ease-in-out;
+		transition: margin-right 0.3s ease-in-out, right 0.3s ease-in-out;
+	}
+	.navbar-collapse.in{ 
+		margin-right: 0 !important;
+		right: 0;
+	}
+	
+	.navbar-nav{
+		margin-top: 140px;
+		width: 100%;
+		text-align: right;
+	}
+	.navbar-nav>li{ float: none; }
+	.navbar-nav>li>a{
+		line-height: 40px;
+		border-bottom: 1px solid #fff
+	}
+	.navbar-fixed .navbar-nav a{color: #fff !important}
+	.navbar-fixed .navbar-nav{margin-top: 100px}
+	.navbar-fixed .navbar-nav>.active>a, .navbar-fixed .navbar-nav>.active>a:focus, 
+	.navbar-fixed .navbar-nav>.active>a:hover{border-bottom: 2px solid #ffff33 !important}
+
+	/* top carousel */
+	.item .carousel-caption li{margin: 0}
+	.item .carousel-caption li:nth-child(2):before{right: 0}
+	.item .carousel-caption li:nth-child(2):after{left: -5px}
+	.item .carousel-caption ul:before{
+		left: 13%;
+		width: 74.2%;
+		top: -35px;
+		height: 90px;
+	}
+	.item h1:first-of-type:before{
+		width: 30px;
+		left: 13%;
+		top: 20px;
+	}
+	.item h1:first-of-type:after{
+		width: 30px;
+		right: 13%;
+		top: 20px;
+	}
+	.item{background-attachment: inherit !important}
+	
+	.section-title b:before{top: 3px}
+	.section-intro ul:before{
+		width: 83%;
+		height: 90px;
+		top: -35px;
+	}
+	.section-intro li{letter-spacing: 3px}
+	.section-intro h1:first-of-type:before,.section-intro h1:first-of-type:after{top: 20px}
+
+	.featured-food{ padding: 0 0 60px 0}
+	.featured-food ul{ 
+		padding-top: 30px;
+	}
+	.featured-food-carousel .owl-dots{ 
+		top: 36%;
+		width: 32%;
+	}
+	.best-logo h1:after{bottom: 7px}
+	.featured-food .description:before{left: 30px}
+
+	/* about */
+	.section-title{text-align: center;}
+	.section-title b:before{right: auto;}
+	.section-title h1:before{
+		left: 35%;
+		background: #fff;
+		bottom: 6px;
+	}
+	.about-chefs{
+		background-attachment: initial;
+		background-size: cover;
+	}
+	.about-chefs:before, .about-chefs:after{display: none;}
+	.about-chefs .col-md-3:before{
+		content: "";
+		position: absolute;
+		left: -10px;
+		right: -10px;
+		top: 0;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.2);
+	}
+	.team{
+		padding: 30px 15px;
+		margin-bottom: -2px;
+	}
+	.team:after, .team:before{width: 35px;}
+	.team:after{left: -26px}
+	.team:before{right: -26px}
+	.story .col-md-offset-1.col-md-3{
+		padding-top: 0;
+		padding-bottom: 30px;
+	}
+
+	/* gallery */
+	.gallery-content{
+		margin-top: 0;
+		padding: 15px;
+	}
+
+	/* events */
+	.countdown ul{left: 60px}
+	.countdown li{margin: 0 22px}
+	.countdown li:first-child:after, .countdown li:nth-child(2):after, 
+	.countdown li:nth-child(3):after{
+		top: 40%;
+		right: -40px;
+	}
+	.start-time{padding: 20px 18px;}
+	.events-panel .panel-title{width: 15%}
+	.events-panel .panel-info{margin-left: 17%}
+	.events-panel a[role=button]{right: 22%}
+	
+	.story-block img{
+		width: 100%;
+		height: auto;
+	}
+	/* reservation */
+	.section-title.no-border h1:before{
+		left: 0;
+		background: #f9f9f6;
+	}
+	.reservation-intro{
+		padding: 15px;
+		text-align: center;
+	}
+	.reservation-intro h2{margin: 0}
+	.reservation-intro h2:after{
+		right: auto;
+		left: 0;
+	}
+	.form-name h2:after, .form-name h2:before{width: 100%}
+	.reservation-form button{width: 60%}
+	.reservation-btn:after{
+		top: auto;
+		bottom: 6%;
+	}
+
+	/* contact */
+	.work-time h2{
+		font-size: 21px;
+		letter-spacing: 0;
+	}
+
+	.contact-dates h2{font-size: 22px;}
+	.social-links li{margin-right: 0}
+
+	footer{padding: 30px 0}
+	footer .logo{top: -80px}
+	.copyright{padding: 0}
+
+	/** Blog Post Page **/
+	.blog-page-header{background-attachment: inherit;}
+	.blog-post-header .section-intro p:before{
+		left: 0;
+		width: 100%;
+	}
+	.blog-post-header .section-intro p:after{left: 0}
+	.blog-post-header .section-intro span:after{right: 0}
+	.blog-page-header .section-intro ul li{margin: 0 7px}
+	.quote-post .content-post:before{height: 77%}
+	.about-author-info{margin-top: 26px}
+	.gallery-post .post-title,
+	.video-post .post-title{margin-bottom: 90px}
+	.tags-menu{margin-bottom: 100px}
+	.instagram-menu{
+		text-align: center;
+		margin-bottom: 90px;
+	}
+	.instagram-menu a{display: block;}
+	.instagram-menu a.middle{
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.search-post{margin-bottom: 90px}
+
+	/*** 404 PAGE ***/
+
+	.page-404{background-position: 50%}
+	.page-404-content .section-intro ul:before{
+		width: 100%;
+		left: 0;
+		top: -40px;
+		height: 97px;
+	}
+
+	.page-404-content .section-intro h1:first-of-type:before, 
+	.page-404-content .section-intro h1:first-of-type:after{ width: 5%;}
+	.page-404-content .section-intro h1:first-of-type:before{left: 0;}
+	.page-404-content .section-intro h1:first-of-type:after{ right: 0%;}
+
+}
+
+/* Monitors ( low resolution ) ----------- */
+@media only screen and (min-width : 1024px) and (max-width : 1500px){
+	
+	.item h1:first-of-type:before{ left: 28% }
+	.item h1:first-of-type:after{ right: 28% }
+
+	.item .carousel-caption ul:before{
+		left: 28%;
+		width: 44%;
+	}
+
+	#top-carousel .carousel-indicators{
+		top: 75%;
+		z-index: 999;
+	}
+	.page-404-content .section-intro ul:before{
+		left: 0;
+		right: 0;
+		width: 100%;
+	}
+	.page-404-content .section-intro h1:first-of-type:before{left: 0} 
+	.page-404-content .section-intro h1:first-of-type:after{right: 0}
+}
+
+
+
+
+
+
