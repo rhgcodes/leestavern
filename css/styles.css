@@ -161,8 +161,8 @@ body{
 .navbar-fixed .navbar-nav>.active>a:hover{border-bottom: 2px solid #333 !important}
 
 .navbar-fixed .navbar-brand {
-	width: 195px;
-	height: 40px;
+	width: 108px;
+	height: 103px;
 	margin: 10px 0;
 	background-image: url("../images/bardojo-logo-small.png") !important;
 	background-repeat: no-repeat
@@ -238,7 +238,7 @@ header:after{
 /* items content */
 .item .carousel-caption{
 	bottom: auto;
-	top: 30%;
+	top: 20%;
 	z-index: 99;
 }
 .item .carousel-caption span{
@@ -339,19 +339,19 @@ header:after{
 }
 .carousel-indicators .active span{background: #ffff33 !important;}
 
-/** items backgrounds **/
+/** items background - Pics under navbar **/
 .item1{
-	background: url("http://placekitten.com/1920/1080");
+	background: url("https://pixabay.com/get/54e2d7434b5aac14f6d1867dda6d367d1636d6e751536c4870297dd19144cd59be/bottle-2220180_1920.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 .item2{
-	background: url("http://placekitten.com/g/1920/1080");
+	background: url("https://pixabay.com/get/5fe2d6454951b108feda84608229347d1c37dce7514c704c73297ed29e44c65e/beer-923633_1920.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 .item3{
-	background: url("http://placekitten.com/1920/1080");
+	background: url("https://pixabay.com/get/55e5d1464852ac14f6d1867dda6d367d1636d6e751536c4870297dd1904dc75eb8/alcohol-3545200_1920.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -477,15 +477,15 @@ header:after{
 	letter-spacing: 4px;
 }
 .principal-menu .menu-name{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://i.imgur.com/mNbF4GQ.jpg") no-repeat;
 	background-size: 100%;
 }
 .deserts .menu-name{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://i.imgur.com/IWO81Vy.jpg") no-repeat;
 	background-size: 100%;
 }
 .drinks-menu .menu-name{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://media-cdn.tripadvisor.com/media/photo-s/08/b0/d0/5b/baker-street-pub-and.jpg") no-repeat;
 	background-size: 100%;
 }
 
@@ -637,15 +637,17 @@ header:after{
 
 /** backgrounds **/
 .recommedation1{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://www.newbelgium.com/globalassets/merch/hemperor-hpa-womens-shirt/newbelgium-140.jpg") no-repeat;
 	background-position: 0 85%;
+	background-size: 100%;
 }
 .recommedation2{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://media.timeout.com/images/103852808/630/472/image.jpg") no-repeat;
 	background-position: 0 85%;
+	background-size: 100%;
 }
 .recommedation3{
-	background: url("http://placehold.it/350x350") no-repeat;
+	background: url("https://assets.punchdrink.com/wp-content/uploads/2016/11/Recipe-How-to-Make-a-Negroni-Campari-Cocktail-Recipe-Ratio-Naren-Young-Dante-NYC.jpg") no-repeat;
 	background-position: 0 50%;
 }
 
