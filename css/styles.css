@@ -341,17 +341,17 @@ header:after{
 
 /** items background - Pics under navbar **/
 .item1{
-	background: url("https://pixabay.com/get/54e2d7434b5aac14f6d1867dda6d367d1636d6e751536c4870297dd19144cd59be/bottle-2220180_1920.jpg");
+	background: url("https://i.imgur.com/KN8MgHN.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 .item2{
-	background: url("https://pixabay.com/get/5fe2d6454951b108feda84608229347d1c37dce7514c704c73297ed29e44c65e/beer-923633_1920.jpg");
+	background: url("https://i.imgur.com/0FZ3miW.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
 .item3{
-	background: url("https://pixabay.com/get/55e5d1464852ac14f6d1867dda6d367d1636d6e751536c4870297dd1904dc75eb8/alcohol-3545200_1920.jpg");
+	background: url("https://i.imgur.com/kW0fy0a.jpg");
 	background-size: cover;
 	background-attachment: fixed;
 }
