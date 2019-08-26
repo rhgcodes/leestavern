@@ -485,7 +485,7 @@ header:after{
 	background-size: 100%;
 }
 .drinks-menu .menu-name{
-	background: url("https://media-cdn.tripadvisor.com/media/photo-s/08/b0/d0/5b/baker-street-pub-and.jpg") no-repeat;
+	background: url("https://i.imgur.com/LZQbDzp.jpg") no-repeat;
 	background-size: 100%;
 }
 
@@ -2511,6 +2511,20 @@ footer .logo{
 	-webkit-transition: height 0.2s ease-in-out;
 	-o-transition: height 0.2s ease-in-out;
 	transition: height 0.2s ease-in-out;
+}
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
 }
 
 /*--------------------------------------------
